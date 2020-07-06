@@ -9,6 +9,7 @@ use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
 use App\Entity\Student;
 use App\Repository\MarkRepository;
 use App\Repository\StudentRepository;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class StudentItemDataProvider implements ItemDataProviderInterface, RestrictedDataProviderInterface
 {
@@ -35,6 +36,12 @@ class StudentItemDataProvider implements ItemDataProviderInterface, RestrictedDa
     public function getItem(string $resourceClass, $studentId, string $operationName = null, array $context = []): \Generator
     {
         $student = $this->studentRepository->find($studentId);
+
+        if (null === $student) {
+            // Using internal codes for a better understanding of what's going on
+            throw new NotFoundHttpException(sprintf('The student %s does not exist.', $studentId));
+        }
+
         $student->setAverages($this->repository->getAveragesMarksBySubject($studentId));
 
         yield $student;
