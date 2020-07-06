@@ -2,26 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82c650a4-9d10-424d-9a34-909484566e33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataProvider/MarkCollectionDataProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataProvider/StudentItemDataProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Average.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/MarkTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/StudentTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ubitransport.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ubitransport.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UbiController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/StudentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/StudentRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ubi/index.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="LOCAL" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="LOCAL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="LOCAL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,7 +73,18 @@
       </set>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpDebugGeneral" listening_started="true" xdebug_force_break_when_no_path_mapping="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.1" id="dda3c882-d5f3-491f-a38b-de1bc2e51b3e" name="127.0.0.1" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/html/ubi" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWebServerValidation" deployment_server_id="6e1c06d1-b395-473a-b9c1-e0434c260590" path_to_validation_script="T:\dev\sources\chris\ubitransport" selected_validation_type="REMOTE" web_path_to_validation_script="http://127.0.0.1/api" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/symfony/cache" />
@@ -115,9 +166,27 @@
       <path value="$PROJECT_DIR$/vendor/symfony/profiler-pack" />
       <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
     </include_path>
   </component>
   <component name="ProjectId" id="1eAYYFbFac7APpShq0TtJYaW9ba" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -125,6 +194,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -132,6 +202,30 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/unit" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="T:\dev\sources\chris\ubitransport\tests\unit" />
+      <recent name="T:\dev\sources\chris\ubitransport\src\DataProvider" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="T:\dev\sources\chris\ubitransport\src\Controller\Api" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GetStudentAverageMarks.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://192.168.156.102/src/Controller/Api/GetStudentAverageMarks.php">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="Unnamed" session_id="PHPSTORM">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.GetStudentAverageMarks.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -144,7 +238,15 @@
       <option name="presentableId" value="Default" />
       <updated>1593765910316</updated>
       <workItem from="1593765912784" duration="1334000" />
-      <workItem from="1593775848823" duration="7564000" />
+      <workItem from="1593775848823" duration="7710000" />
+      <workItem from="1593785749464" duration="64000" />
+      <workItem from="1593785826802" duration="79000" />
+      <workItem from="1593785918601" duration="1255000" />
+      <workItem from="1593788712839" duration="2056000" />
+      <workItem from="1593940143327" duration="9090000" />
+      <workItem from="1593952445984" duration="377000" />
+      <workItem from="1593953914876" duration="238000" />
+      <workItem from="1593954164923" duration="32003000" />
     </task>
     <servers />
   </component>
@@ -152,10 +254,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="360" key="#Deployment" timestamp="1593785204018">
+    <state x="585" y="360" key="#Deployment" timestamp="1594035935231">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="585" y="360" key="#Deployment/0.0.2560.1400@0.0.2560.1400" timestamp="1593785204018" />
+    <state x="585" y="360" key="#Deployment/0.0.2560.1400@0.0.2560.1400" timestamp="1594035935231" />
+    <state x="713" y="354" key="#Servers" timestamp="1594035502733">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="713" y="354" key="#Servers/0.0.2560.1400@0.0.2560.1400" timestamp="1594035502733" />
+    <state x="587" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594044318102">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="587" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594044318102" />
+    <state x="788" y="411" key="#com.intellij.ide.util.MemberChooser" timestamp="1594027342531">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="788" y="411" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1594027342531" />
+    <state x="920" y="469" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1594041428195">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="920" y="469" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594041428195" />
+    <state x="708" y="522" width="570" height="415" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1594036128140">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="708" y="522" width="570" height="415" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.2560.1400@0.0.2560.1400" timestamp="1594036128140" />
+    <state x="1220" y="376" key="#xdebugger.evaluate" timestamp="1594037390484">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1220" y="376" key="#xdebugger.evaluate/0.0.2560.1400@0.0.2560.1400" timestamp="1594037390484" />
     <state x="766" y="597" key="ComposerInitDialogKey" timestamp="1593777289578">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -164,5 +290,81 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="95" y="106" width="1790" height="1158" key="DirDiffDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1593776974885" />
+    <state x="775" y="422" key="FileChooserDialogImpl" timestamp="1593948003642">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="775" y="422" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1593948003642" />
+    <state width="1898" height="464" key="GridCell.Tab.0.bottom" timestamp="1594048327556">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327556" />
+    <state width="1898" height="464" key="GridCell.Tab.0.center" timestamp="1594048327555">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327555" />
+    <state width="1898" height="464" key="GridCell.Tab.0.left" timestamp="1594048327555">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327555" />
+    <state width="1898" height="464" key="GridCell.Tab.0.right" timestamp="1594048327555">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327555" />
+    <state width="1898" height="464" key="GridCell.Tab.1.bottom" timestamp="1594048327556">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327556" />
+    <state width="1898" height="464" key="GridCell.Tab.1.center" timestamp="1594048327556">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327556" />
+    <state width="1898" height="464" key="GridCell.Tab.1.left" timestamp="1594048327556">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327556" />
+    <state width="1898" height="464" key="GridCell.Tab.1.right" timestamp="1594048327556">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327556" />
+    <state width="1898" height="464" key="GridCell.Tab.2.bottom" timestamp="1594048327557">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327557" />
+    <state width="1898" height="464" key="GridCell.Tab.2.center" timestamp="1594048327556">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327556" />
+    <state width="1898" height="464" key="GridCell.Tab.2.left" timestamp="1594048327556">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327556" />
+    <state width="1898" height="464" key="GridCell.Tab.2.right" timestamp="1594048327556">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1898" height="464" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594048327556" />
+    <state x="774" y="510" key="NewPhpClassDialog" timestamp="1594037994974">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="774" y="510" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594037994974" />
+    <state x="118" y="330" width="1453" height="852" key="SettingsEditor" timestamp="1594036445535">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="118" y="330" width="1453" height="852" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1594036445535" />
+    <state x="545" y="435" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1594035401421">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="545" y="435" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2560.1400@0.0.2560.1400" timestamp="1594035401421" />
+    <state x="689" y="432" width="607" height="536" key="find.popup" timestamp="1594042409645">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="689" y="432" width="607" height="536" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1594042409645" />
+    <state x="865" y="589" key="publish.login" timestamp="1593952560792">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="865" y="589" key="publish.login/0.0.2560.1400@0.0.2560.1400" timestamp="1593952560792" />
+    <state x="658" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1594038014073">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="658" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1594038014073" />
   </component>
 </project>
