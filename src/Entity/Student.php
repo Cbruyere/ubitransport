@@ -16,7 +16,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ApiResource(
  *     collectionOperations={
  *        "get"={
- *         "normalization_context"={"groups"={"write"}},
+ *         "normalization_context"={"groups"={"read", "write"}},
  *         "denormalization_context"={"groups"={"write"}}
  *       },
  *        "post"={
@@ -26,7 +26,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *     },
  *     itemOperations={
  *       "get"= {
- *         "normalization_context"={"groups"={"write"}},
+ *         "normalization_context"={"groups"={"read", "write"}},
  *         "denormalization_context"={"groups"={"write"}}
  *       },
  *       "put" = {
@@ -117,6 +117,8 @@ class Student
 
     /**
      * @ORM\OneToMany(targetEntity=Mark::class, mappedBy="student", orphanRemoval=true)
+     *
+     * @Groups("read")
      */
     private Collection $marks;
 
