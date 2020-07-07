@@ -9,14 +9,34 @@ use DateTimeInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ApiResource(
+ *     collectionOperations={
+ *        "get"={
+ *         "normalization_context"={"groups"={"write"}},
+ *         "denormalization_context"={"groups"={"write"}}
+ *       },
+ *        "post"={
+ *         "normalization_context"={"groups"={"write"}},
+ *         "denormalization_context"={"groups"={"write"}}
+ *       }
+ *     },
  *     itemOperations={
- *       "get",
- *       "put",
- *       "patch",
+ *       "get"= {
+ *         "normalization_context"={"groups"={"write"}},
+ *         "denormalization_context"={"groups"={"write"}}
+ *       },
+ *       "put" = {
+ *         "normalization_context"={"groups"={"write"}},
+ *         "denormalization_context"={"groups"={"write"}}
+ *       },
+ *       "patch" = {
+ *         "normalization_context"={"groups"={"write"}},
+ *         "denormalization_context"={"groups"={"write"}}
+ *       },
  *       "delete",
  *       "get_student_average_marks"={
  *         "pagination_enabled"=false,
@@ -57,6 +77,8 @@ class Student
      * )
      *
      * @Assert\NotNull
+     *
+     * @Groups("write")
      */
     private string $firstname;
 
@@ -77,6 +99,8 @@ class Student
      * )
      *
      * @Assert\NotNull
+     *
+     * @Groups("write")
      */
     private string $lastname;
 
@@ -84,7 +108,10 @@ class Student
      * @ORM\Column(type="datetime")
      *
      * @Assert\Type("\DateTimeInterface")
+     *
      * @Assert\NotNull
+     *
+     * @Groups("write")
      */
     private DateTimeInterface $birthday;
 
